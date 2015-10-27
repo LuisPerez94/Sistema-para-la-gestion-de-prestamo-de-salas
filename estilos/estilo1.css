@@ -1,0 +1,14 @@
+body{
+	margin-left:5px;
+	margin-right:5px
+}
+footer{
+	background-color: #101010;
+color: #ccc;
+padding: 4px;
+}
+a{
+	text-decoration: none;
+	font-style: none;
+	
+}
