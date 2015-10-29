@@ -50,19 +50,19 @@
 		<div class="carousel-inner">
 			
 			<div class="item active"><img src="imagenes/slide1.png" alt="Pimera Imagen">
-			<div class="carousel-caption">
+			<div class="carousel-caption visible-lg">
 				<h3>Primer Encabezado de imagen</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia alias deleniti saepe incidunt numquam explicabo repellendus, totam natus necessitatibus dolore facere, eos voluptas nesciunt expedita. Aliquid nostrum sint excepturi! Omnis.</p>
 			</div>
 			</div>
 			<div class="item"><img src="imagenes/slide2.png" alt="Segunda Imagen">
-			<div class="carousel-caption">
+			<div class="carousel-caption visible-lg">
 				<h3>Segundo Encabezado de imagen</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia alias deleniti saepe incidunt numquam explicabo repellendus, totam natus necessitatibus dolore facere, eos voluptas nesciunt expedita. Aliquid nostrum sint excepturi! Omnis.</p>
 			</div>
 			</div>
 			<div class="item"><img src="imagenes/slide3.png" alt="Tercera Imagen">
-			<div class="carousel-caption">
+			<div class="carousel-caption visible-lg">
 				<h3>Tercer Encabezado de imagen</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia alias deleniti saepe incidunt numquam explicabo repellendus, totam natus necessitatibus dolore facere, eos voluptas nesciunt expedita. Aliquid nostrum sint excepturi! Omnis.</p>
 			</div>

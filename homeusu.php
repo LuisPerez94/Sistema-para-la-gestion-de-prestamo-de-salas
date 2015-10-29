@@ -29,6 +29,7 @@
 				<li class="active"><a href="homeusu.php">Home</a></li>
 				<li><a href="calendarizacion.php">Calendarización</a></li>
 				<li><a href="historialPrestamo.php">Historial De Prestamos</a></li>
+				<li><a href="peticion.php">Hacer una Petición</a></li>
 				
 			</ul>
 			<ul class="nav navbar navbar-right">

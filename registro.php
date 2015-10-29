@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bienvenido :D</title>
+    <title>Gesti&oacute;n de salas</title>
 	<link rel="stylesheet" href="estilos/bs/css/bootstrap.css">
     <link rel="stylesheet" href="estilos/estilo1.css">
 
@@ -21,69 +21,56 @@
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 		</button>
-		<a  href="#" class="navbar-brand">SisGes</a>
+		<a href="login.php" class="navbar-brand">SisGes</a>
 		</div>
 		<!--Conjunto de los links de nav para el toggleo-->
 		<div id="navbarCollapse" class="collapse navbar-collapse">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="homeusu.php">Home</a></li>
-				<li><a href="calendarizacion.php">Calendarización</a></li>
-				<li><a href="historialPrestamo.php">Historial De Prestamos</a></li>
-				<li><a href="peticion.php">Hacer una Petición</a></li>
+				<li class="active"><a href="registro.php">Registrate</a></li>
+				<li><a href="acercade.php">Acerca De</a></li>
 				
 			</ul>
 			<ul class="nav navbar navbar-right">
-			<li><a href="www.itver.edu.mx" target="_blank">Itver</a></li>
+			<li><a src="http://www.itver.edu.mx/" target="_blank">Itver</a></li>
 			</ul>
 		</div>
 	</nav>	
 
+	<div class="row">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h3 class="panel-title">Bienvenido a la sección de resgitro</h3>
+
+				</div>
+				<div class="panel-body">
+					<p class="text-center">Es importante que tomes en cuenta la siguiente información para llevar acabo tu resgitro:</p>
+					<ul class="list-group">
+				  <a class="list-group-item"><span class="glyphicon glyphicon-asterisk"></span> Debes ser jefe de departamento o maestro para poder solicitar una cuenta</a>
+				  <a class="list-group-item"><span class="glyphicon glyphicon-asterisk"></span> Tu información sera enviada y verificada por el administador del sistema en un periodo máximo de dos días hábiles</a>
+				  <a class="list-group-item"> <span class="glyphicon glyphicon-asterisk"></span> Si tu solicitud de cuenta ha sido aceptada , se te enviará un correo electronico que te hará saber los detalles de la evaluación</a>
+				 
+				</ul>
+				</div>
+			</div>
+		</div>
+		</div>
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-6">
 				<div class="panel panel-primary">
 					<div class="panel-heading">
-						<h4 class="panel-title">Este es tu historial de prestamos :)</h4>
-						<br>
-						<p>Numero de prestamos realizados <span class="badge">3</span></p>
+						<h3 class="panel-title">Registrate !!</h3>
 					</div>
 					<div class="panel-body">
-					<table class="table">
-						<tr>
-							<th>Nombre del evento</th>
-							<th>Sala que se prestó para este evento</th>
-							<th>Fecha del préstamo</th>
-							<th>Numero de personas que asistieron</th>
-
-						</tr>
-						<tr>
-							<td>Aquí se generará con php</td>
-							<td>Aquí se generará con php</td>
-							<td>Aquí se generará con php</td>
-							<td>Aquí se generará con php</td>
-						</tr>
-												<tr>
-							<td>Aquí se generará con php</td>
-							<td>Aquí se generará con php</td>
-							<td>Aquí se generará con php</td>
-							<td>Aquí se generará con php</td>
-						</tr>
-												<tr>
-							<td>Aquí se generará con php</td>
-							<td>Aquí se generará con php</td>
-							<td>Aquí se generará con php</td>
-							<td>Aquí se generará con php</td>
-						</tr>
-					</table>
+						<p>FORMULARIO</p>
 					</div>
+
 				</div>
-
 			</div>
-
 		</div>
-	
+	</div>
 
-	<br>
-	
 
 	<!--Footer-->
 	<footer>

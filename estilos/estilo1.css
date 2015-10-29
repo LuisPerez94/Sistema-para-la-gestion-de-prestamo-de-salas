@@ -12,3 +12,6 @@ a{
 	font-style: none;
 	
 }
+select{
+	width: 100%;
+}
