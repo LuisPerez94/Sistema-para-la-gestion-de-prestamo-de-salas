@@ -62,12 +62,12 @@
 		<div class="col-md-4">
 			<div class="panel panel-primary">
 			<div class="panel-heading">
-				<h5 class="panel-title">
+				<h5 class="panel-title text-center">
 					Calendarización
 				</h5>
 				</div>
 				<div class="panel-body">
-					<p>Desde aquí podrás observar todos los estados de cada una de las salas,para que puedas determinar cuando apartar una para préstamo.</p>
+                                    <p class="text-center">Desde aquí podrás observar todos los estados de cada una de las salas,para que puedas determinar cuando apartar una para préstamo.</p>
 					<br>
 					<a href="calendarizacion.php">
 					<button type="button" class="btn btn-default btn-lg center-block" >
@@ -78,12 +78,12 @@
 		<div class="col-md-4">
 			<div class="panel panel-primary">
 			<div class="panel-heading">
-				<h5 class="panel-title">
+				<h5 class="panel-title text-center">
 					Haz una Petición
 				</h5>
 				</div>
 				<div class="panel-body" style="min-height: 30;">
-					<p>Realiza la petición de la sala la cual hayas visto que esta desocupada cuando la necesitas.</p>
+					<p class="text-center">Realiza la petición de la sala la cual hayas visto que esta desocupada cuando la necesitas.</p>
 					<br>
 					<a href="peticion.php">
 					<button type="button" class="btn btn-default btn-lg center-block" href="peticion.php">
@@ -96,12 +96,12 @@
 		<div class="col-md-4">
 			<div class="panel panel-primary">
 			<div class="panel-heading">
-				<h5 class="panel-title">
+				<h5 class="panel-title text-center">
 					Ve tu historial de prestamos
 				</h5>
 				</div>
 				<div class="panel-body">
-					<p>Cualquier duda estamos para apoyarte :).</p>
+					<p class="text-center">Cualquier duda estamos para apoyarte :).</p>
 					<br>
 					<a href="historialPrestamo.php">
 					<button type="button" class="btn btn-default btn-lg center-block" href="historialPrestamo.php">

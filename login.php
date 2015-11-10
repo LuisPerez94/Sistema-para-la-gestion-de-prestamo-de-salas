@@ -12,6 +12,12 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
+	<?php
+        require 'scripts/conecta.php';
+        $sql = "SELECT * FROM NoticiasSistema";
+        $result = $con->query($sql);
+        $num = mysqli_num_rows($result);
+        ?>
 	<nav role="navigation" class="navbar navbar-inverse">
 		<!-- Agrupamos para mejor  visualizacion en mobiles-->
 		<div class="navbar-header">
@@ -112,7 +118,20 @@
 						<h3 class="panel-title">Últimas Noticias</h3>
 					</div>
 					<div class="panel-body">
-						<p>Ultimas noticias relacionadas con el sistema o con la salas de computo</p>
+						<table class="table table-condensed">
+							
+							<?php
+								for ($i=0; $i < $num; $i++) {
+									 $row = $result->fetch_assoc();
+									echo "<td><h4>".$row['nombreNoticia']."</h4> <br>";
+									echo $row['DescripcionNoticia']."<br>";
+									echo "<p class='text-right'>".$row['fechaNoticia']."</p>";
+
+									echo "</td>";
+								}
+							?>
+
+						</table>
 					</div>
 				
 			</div>
@@ -144,19 +163,19 @@
 			<div class="col-md-3">
 				<p>Siguenos en las redes sociales :)</p>
 				<ul>
-					<li>Facebook</li>
-					<li>Twitter</li>
-					<li>Youtube</li>
+					<li class="banners social"><a href=""><img src="imagenes/sociales/facebook.png" alt="Facebook" width="50px"></a></li>
+					<li class="banners social"><a href=""><img src="imagenes/sociales/twitter.png" alt="Twitter" width="50px"></a></li>
+					<li class="banners social"><a href=""><img src="imagenes/sociales/youtube.png" alt="YouTube" width="50px"></a></li>
 				</ul>
 			</div>
 			<div class="col-md-4">
 				<p>Enlaces asociados</p>
 				<ul>
-					<li>Instituto Tecnologico de Veracruz</li>
-					<li>Moddle</li>
-					<li>LCI</li>
-					<li>CEPC</li>
-					<li>Cisco</li>
+					<li class="banners"><a href=""><img src="imagenes/banners/tecno.png" alt="Itver" width="300px"></a></li>
+					<li class="banners"><a href=""><img src="imagenes/banners/moodle.jpg" alt="Moodle" width="300px" height="50px"></a></li>
+					<li class="banners"><a href=""><img src="imagenes/banners/lci.jpg" alt="LCI ITVER" width="300px" height="100px"></a></li>			
+					<li class="banners"><a href=""><img src="imagenes/banners/cepc.jpg" alt="CEPC" width="300px" height="100px"></a></li>
+					<li class="banners"><a href=""><img src="imagenes/banners/cisco.jpg" alt="Cisco" width="300px" height="100px"></a></li>
 				</ul>
 			</div>
 		</div>

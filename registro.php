@@ -1,3 +1,7 @@
+<?php
+	$r=$_GET["r"];
+	
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -49,25 +53,85 @@
 					<ul class="list-group">
 				  <a class="list-group-item"><span class="glyphicon glyphicon-asterisk"></span> Debes ser jefe de departamento o maestro para poder solicitar una cuenta</a>
 				  <a class="list-group-item"><span class="glyphicon glyphicon-asterisk"></span> Tu información sera enviada y verificada por el administador del sistema en un periodo máximo de dos días hábiles</a>
-				  <a class="list-group-item"> <span class="glyphicon glyphicon-asterisk"></span> Si tu solicitud de cuenta ha sido aceptada , se te enviará un correo electronico que te hará saber los detalles de la evaluación</a>
+				  <a class="list-group-item"><span class="glyphicon glyphicon-asterisk"></span> Si tu solicitud de cuenta ha sido aceptada , se te enviará un correo electronico que te hará saber los detalles de la evaluación</a>
+				  <a class="list-group-item"><span class="glyphicon glyphicon-asterisk"></span> Si tu cuenta fue aceptada tus datos de usuario y contraseña se enviarán al correo que proporcionaste</a>
 				 
 				</ul>
 				</div>
 			</div>
 		</div>
 		</div>
-		<div class="row">
+		<div class="row" >
 			<div class="col-md-6">
 				<div class="panel panel-primary">
 					<div class="panel-heading">
 						<h3 class="panel-title">Registrate !!</h3>
 					</div>
 					<div class="panel-body">
-						<p>FORMULARIO</p>
+						<form action="scripts/agregarCliente.php" method="POST" class="form">
+							
+							  <div class="form-group">
+						    <label for="nombre">Nombre: <span class="glyphicon glyphicon-asterisk"></span> </label>
+						    <input type="text" class="form-control" id="nombre"
+						           placeholder="Introduce tu nombre" name="nombre" required>
+						  </div>
+						  <div class="form-group">
+						    <label for="apellido Paterno">Apellido Paterno: <span class="glyphicon glyphicon-asterisk"></span> </label>
+						    <input type="text" class="form-control" id="apPaterno" 
+						           placeholder="Tu primer apellido" name="apPaterno" required>
+						  </div>
+						   <div class="form-group">
+						    <label for="apellido Materno">Apellido Materno: <span class="glyphicon glyphicon-asterisk"></span> </label>
+						    <input type="text" class="form-control" id="apMaterno" 
+						           placeholder="Tu segundo apellido" name="apMaterno" required>
+						  </div>
+						   <div class="form-group">
+						    <label for="puesto">Puesto: <span class="glyphicon glyphicon-asterisk"></span> </label>
+						    <input type="text" class="form-control" id="puesto"
+						           placeholder="Puesto que tienes en el Itver"  name="puesto" required>
+						  </div>
+
+						  <div class="form-group">
+						    <label for="email">Correo Electronico: <span class="glyphicon glyphicon-asterisk"></span> </label>
+						    <input type="email" class="form-control" id="email"
+						           placeholder="Tu correo electronico" name="email" required>
+						  </div>
+						 
+						  <button type="submit" class="btn btn-success">Enviar</button>
+						</form>
+						<br>
+						<span class="glyphicon glyphicon-asterisk"></span> Campos Obligatorios
 					</div>
 
 				</div>
 			</div>
+		
+		<aside class="col-md-6">
+			<?php 
+				if(isset($r)==true){
+					?>
+						<div class="panel panel-info">
+							<div class="panel-heading">
+								<h3 class="panel-title">
+									SISGEST
+								</h3>
+							</div>
+							<div class="panel-body">
+								<?php
+									if($r==1){
+										echo "<span class='glyphicon glyphicon-ok'></span> Tu registro ha sido enviado , espera la confirmacion en tu correo :)";
+									}
+									else{
+										echo "<span class='glyphicon glyphicon-error'></span> ERROR EN TUS DATOS , tu solicitud no pudo ser aceptada";
+									}
+								?>
+							</div>
+						</div>
+
+					<?php
+				}
+			?>
+		</aside>
 		</div>
 	</div>
 
@@ -97,19 +161,19 @@
 			<div class="col-md-3">
 				<p>Siguenos en las redes sociales :)</p>
 				<ul>
-					<li>Facebook</li>
-					<li>Twitter</li>
-					<li>Youtube</li>
+					<li class="banners social"><a href=""><img src="imagenes/sociales/facebook.png" alt="Facebook" width="50px"></a></li>
+					<li class="banners social"><a href=""><img src="imagenes/sociales/twitter.png" alt="Twitter" width="50px"></a></li>
+					<li class="banners social"><a href=""><img src="imagenes/sociales/youtube.png" alt="YouTube" width="50px"></a></li>
 				</ul>
 			</div>
 			<div class="col-md-4">
 				<p>Enlaces asociados</p>
 				<ul>
-					<li>Instituto Tecnologico de Veracruz</li>
-					<li>Moddle</li>
-					<li>LCI</li>
-					<li>CEPC</li>
-					<li>Cisco</li>
+					<li class="banners"><a href=""><img src="imagenes/banners/tecno.png" alt="Itver" width="300px"></a></li>
+					<li class="banners"><a href=""><img src="imagenes/banners/moodle.jpg" alt="Moodle" width="300px" height="50px"></a></li>
+					<li class="banners"><a href=""><img src="imagenes/banners/lci.jpg" alt="LCI ITVER" width="300px" height="100px"></a></li>			
+					<li class="banners"><a href=""><img src="imagenes/banners/cepc.jpg" alt="CEPC" width="300px" height="100px"></a></li>
+					<li class="banners"><a href=""><img src="imagenes/banners/cisco.jpg" alt="Cisco" width="300px" height="100px"></a></li>
 				</ul>
 			</div>
 		</div>

@@ -40,10 +40,10 @@
 		<!--Conjunto de los links de nav para el toggleo-->
 		<div id="navbarCollapse" class="collapse navbar-collapse">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="homeusu.php">Home</a></li>
+				<li ><a href="homeusu.php">Home</a></li>
 				<li><a href="calendarizacion.php">Calendarización</a></li>
 				<li><a href="historialPrestamo.php">Historial De Prestamos</a></li>
-				<li><a href="peticion.php">Hacer una Petición</a></li>
+				<li class="active"><a href="peticion.php">Hacer una Petición</a></li>
 			</ul>
 			<ul class="nav navbar navbar-right">
 			<li><a href="www.itver.edu.mx" target="_blank">Itver</a></li>
@@ -121,7 +121,7 @@
 
 	</div>
 
-	<!--Footer-->
+		<!--Footer-->
 	<footer>
 		
 			<div class="row">
@@ -146,19 +146,19 @@
 			<div class="col-md-3">
 				<p>Siguenos en las redes sociales :)</p>
 				<ul>
-					<li>Facebook</li>
-					<li>Twitter</li>
-					<li>Youtube</li>
+					<li class="banners social"><a href=""><img src="imagenes/sociales/facebook.png" alt="Facebook" width="50px"></a></li>
+					<li class="banners social"><a href=""><img src="imagenes/sociales/twitter.png" alt="Twitter" width="50px"></a></li>
+					<li class="banners social"><a href=""><img src="imagenes/sociales/youtube.png" alt="YouTube" width="50px"></a></li>
 				</ul>
 			</div>
 			<div class="col-md-4">
 				<p>Enlaces asociados</p>
 				<ul>
-					<li>Instituto Tecnologico de Veracruz</li>
-					<li>Moddle</li>
-					<li>LCI</li>
-					<li>CEPC</li>
-					<li>Cisco</li>
+					<li class="banners"><a href=""><img src="imagenes/banners/tecno.png" alt="Itver" width="300px"></a></li>
+					<li class="banners"><a href=""><img src="imagenes/banners/moodle.jpg" alt="Moodle" width="300px" height="50px"></a></li>
+					<li class="banners"><a href=""><img src="imagenes/banners/lci.jpg" alt="LCI ITVER" width="300px" height="100px"></a></li>			
+					<li class="banners"><a href=""><img src="imagenes/banners/cepc.jpg" alt="CEPC" width="300px" height="100px"></a></li>
+					<li class="banners"><a href=""><img src="imagenes/banners/cisco.jpg" alt="Cisco" width="300px" height="100px"></a></li>
 				</ul>
 			</div>
 		</div>
